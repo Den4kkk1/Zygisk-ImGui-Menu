@@ -11,29 +11,26 @@ void DrawMenu()
 {
     static ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
     {
-        Begin(OBFUSCATE("ZyCheats"));
+        Begin(OBFUSCATE("Smulton Module SO2"));
         ImGuiTabBarFlags tab_bar_flags = ImGuiTabBarFlags_FittingPolicyResizeDown;
         if (BeginTabBar("Menu", tab_bar_flags)) {
-            if (BeginTabItem(OBFUSCATE("Account"))) {
+            if (BeginTabItem(OBFUSCATE("Smulton Module SO2"))) {
                 // here menu stuff, remove test btw
                 // ImGui::Checkbox(OBFUSCATE("This is a checkbox"), &test);
-                if (Button(OBFUSCATE("Add Currency"))) {
+                if (Button(OBFUSCATE("Chams"))) {
                     // code for button action
-                    addCurrency = true;
                 }
-                TextUnformatted(OBFUSCATE("Adds 1000 gems"));
-                if (Button(OBFUSCATE("Add Skins"))) {
+        
+                if (Button(OBFUSCATE("ESP"))) {
                     // code for button action
-                    addSkins = true;
+                    
                 }
-                Checkbox(OBFUSCATE("Everything unlocked"), &everythingUnlocked);
-                Checkbox(OBFUSCATE("Free Items"), &freeItems);
-                Checkbox(OBFUSCATE("Show Items"), &showAllItems);
+                
                 EndTabItem();
             }
             EndTabBar();
         }
-        Patches();
+        
         End();
     }
 }
